@@ -7,3 +7,8 @@ if [ ! -f $chromeDriverBin ]; then
     exit
 fi
 sudo cp $chromeDriverBin /usr/local/bin
+if [ ! -f /usr/local/bin/chromedriver ]; then
+    echo Failed to install Google Chrome web driver file.
+    exit
+fi
+echo Finished Google Chrome web driver installation.
